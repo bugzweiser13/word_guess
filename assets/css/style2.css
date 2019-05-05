@@ -1,0 +1,66 @@
+body {
+    background: black;
+    height: 100%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    position: relative;
+    background: url("../images/fire.jpg");
+    width: 700px;
+    height: 500px;
+    padding: 20px;
+    margin: 5% auto 3% auto;
+    border: 5px solid rgb(247, 230, 4);
+    border-radius: 5px;
+}
+
+.big4 {
+    position: relative;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 600px;
+    padding: 2px;
+    left: 7%;
+}
+
+.to-do {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.the_word {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    bottom: 25%;
+    left: 33%;
+}
+
+.win {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    bottom: 7%;
+}
+
+.loss {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    bottom: 2%;
+}
+
+.guess {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    bottom: 2%;
+    right: 5%;
+}

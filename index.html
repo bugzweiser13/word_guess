@@ -2,42 +2,41 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon"  href="favicon.ico"/>
-	<title>Corvette Word Guess</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" />
+    <title>Corvette Word Guess</title>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
 
-	<div class="container">
-		<div class="center">
-			<div class="wrapper">
-				<img src="assets/images/c7_dash2.png" alt="c7_dash2.png" style="width:100%;">
-                
-				<div class="word">_ _ _ _ _ _
-					<span id="word"></span></div>
+    <div class="container">
+        <div class="center">
+            <div class="wrapper">
+                <img src="assets/images/c7_dash2.png" alt="c7_dash2.png" style="width:100%;">
 
-				<div class="won1">Won: <span id="won"></span></div>
+                <div>
+                    <span id="word"></span></div>
 
-				<div class="lost1">Lost: <span id="lost"></span></div>
+                <div class="won1">Won: <span id="won"></span></div>
 
-				<div class="guess">Guesses:</div>
-					<div class="attempts"><span id="attempts">10</span></div>
-				
-				<div class="letters">Letters Already Guessed:
-					<span id="playerGuess"></span></div>
+                <div class="lost1">Lost: <span id="lost"></span></div>
 
-			</div>
-		</div>
-	</div>
+                <div class="guess">Guesses:</div>
+                <div class="attempts"><span id="attempts">10</span></div>
 
-		<script src="assets/js/game.js"></script>
+                <div class="letters">Choose Letters Below
+                    <span id="playerGuess"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/word.js"></script>
 
 </body>
 
