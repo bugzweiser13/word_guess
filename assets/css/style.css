@@ -1,5 +1,8 @@
 body {
     background: black;
+    background: url("../images/firebg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100%;
     line-height: 50px;
 }
@@ -24,7 +27,7 @@ body {
     font-size: 35px;
     color: white;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
@@ -43,11 +46,21 @@ body {
     text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
+#wins {
+    color: yellow;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
+}
+
 .loss {
     position: absolute;
     color: white;
     font-size: 30px;
     bottom: 1%;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
+}
+
+#lost {
+    color: yellow;
     text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
@@ -71,7 +84,7 @@ body {
 
 #attempts {
     position: absolute;
-    color: white;
+    color: yellow;
     font-size: 30px;
     bottom: 8%;
     right: 5%;
@@ -80,7 +93,7 @@ body {
 
 .alpha {
     position: absolute;
-    color: white;
+    color: yellow;
     font-size: 30px;
     bottom: 1%;
     right: 5%;
@@ -94,6 +107,9 @@ body {
     .guesses,
     #attempts,
     .alpha {
+        font-size: 25px;
+    }
+    .to-do {
         font-size: 25px;
     }
     .logo {
@@ -111,7 +127,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     .logo {
-        width: 600px;
+        width: 500px;
         height: auto;
     }
     .logo img {
@@ -128,6 +144,17 @@ body {
 }
 
 @media only screen and (min-width: 948px) {
+    .win,
+    .loss,
+    .guess_at,
+    .guesses,
+    #attempts,
+    .alpha {
+        font-size: 30px;
+    }
+    .to-do {
+        font-size: 35px;
+    }
     .logo {
         width: 940px;
         height: auto;
