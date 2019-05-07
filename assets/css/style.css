@@ -1,75 +1,146 @@
-/*.center {
-    display: fixed;
-    background: url("../images/c7_dash2.png"); 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    margin: 3% auto 3% auto;
-    width: 75%;
-    height: 1000px;
-}*/
+body {
+    background: black;
+    height: 100%;
+    line-height: 50px;
+}
 
-.wrapper {
+#wrapper {
     position: relative;
-    text-align: center;
-    color: white;
-    width: 60%;
-    padding: 10px;
+    background: url("../images/fire.jpg");
+    padding: 20px;
+    height: 500px;
     margin: 5% auto 3% auto;
-    border: 5px solid grey;
+    border: 5px solid rgb(247, 230, 4);
+    border-radius: 5px;
+    box-shadow: 2px 5px 15px lightgrey;
 }
 
-#word {
-    position: absolute;
-    font-size: 40px;
-    font-weight: 900;
-    color: red;
-    top: 30%;
-    left: 30%;
+.big4 {
+    border: 3px solid black;
+    border-radius: 5px;
 }
 
-.won1 {
+.to-do {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
+}
+
+.the_word {
+    font-size: 65px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
+}
+
+.win {
     position: absolute;
+    color: white;
     font-size: 30px;
-    color: white;
-    top: 25%;
-    left: 6%;
+    bottom: 8%;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
-.lost1 {
+.loss {
     position: absolute;
+    color: white;
     font-size: 30px;
-    color: white;
-    top: 30%;
-    left: 6%;
+    bottom: 1%;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
-.guess {
+.guess_at {
     position: absolute;
-    color: red;
-    text-shadow: 1px 1px 4px white;
+    color: white;
     font-size: 30px;
-    font-weight: 700;
-    bottom: 20%;
-    left: 52%;
+    bottom: 8%;
+    right: 10%;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
-.attempts {
+.guesses {
     position: absolute;
-    font-size: 68px;
-    font-style: italic;
-    font-weight: 700;
     color: white;
-    bottom: 15%;
-    right: 23%;
+    font-size: 30px;
+    bottom: 1%;
+    right: 25%;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
-.letters {
+#attempts {
     position: absolute;
-    float: left;
-    font-size: 25px;
     color: white;
-    bottom: 5%;
-    left: 5%;
-    ;
+    font-size: 30px;
+    bottom: 8%;
+    right: 5%;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
+}
+
+.alpha {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    bottom: 1%;
+    right: 5%;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
+}
+
+@media only screen and (min-width: 640px) {
+    .win,
+    .loss,
+    .guess_at,
+    .guesses,
+    #attempts,
+    .alpha {
+        font-size: 25px;
+    }
+    .logo {
+        width: 550px;
+        height: auto;
+    }
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+    .big4 img {
+        width: 100%
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        width: 600px;
+        height: auto;
+    }
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+    .big4 {
+        width: 600px;
+        height: auto;
+    }
+    .big4 img {
+        width: 100%
+    }
+}
+
+@media only screen and (min-width: 948px) {
+    .logo {
+        width: 940px;
+        height: auto;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .win,
+    .loss,
+    .guess_at,
+    .guesses,
+    #attempts,
+    .alpha {
+        font-size: 30px;
+    }
 }
