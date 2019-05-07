@@ -1,21 +1,14 @@
 body {
     background: black;
     height: 100%;
+    line-height: 50px;
 }
-
-
-/*.title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
 
 #wrapper {
     position: relative;
     background: url("../images/fire.jpg");
-    width: 640px;
-    height: 500px;
     padding: 20px;
+    height: 500px;
     margin: 5% auto 3% auto;
     border: 5px solid rgb(247, 230, 4);
     border-radius: 5px;
@@ -25,28 +18,27 @@ body {
 .big4 {
     border: 3px solid black;
     border-radius: 5px;
-    padding: 2px;
 }
 
 .to-do {
-    font-size: 40px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
+}
+
+.the_word {
+    font-size: 65px;
     color: white;
     text-align: center;
     text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
-.the_word {
-    position: absolute;
-    font-size: 60px;
-    color: white;
-    bottom: 15%;
-    left: 33%;
-}
-
 .win {
     position: absolute;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     bottom: 7%;
     text-shadow: 0 0 5px red, 0 0 7px orange;
 }
@@ -54,31 +46,62 @@ body {
 .loss {
     position: absolute;
     color: white;
-    font-size: 25px;
-    bottom: 2%;
+    font-size: 30px;
+    bottom: 1%;
     text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
-.guess {
+.guess_at {
     position: absolute;
     color: white;
-    font-size: 25px;
-    bottom: 2%;
+    font-size: 30px;
+    bottom: 7%;
+    right: 10%;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
+}
+
+.guesses {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    bottom: 1%;
+    right: 25%;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
+}
+
+#attempts {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    bottom: 7%;
+    right: 5%;
+    text-shadow: 0 0 5px red, 0 0 7px orange;
+}
+
+.alpha {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    bottom: 1%;
     right: 5%;
     text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
 @media only screen and (min-width: 640px) {
+    .win,
+    .loss,
+    .guess_at,
+    .guesses,
+    #attempts,
+    .alpha {
+        font-size: 25px;
+    }
     .logo {
-        width: 300px;
+        width: 550px;
         height: auto;
     }
     .logo img {
         max-width: 100%;
-        height: auto;
-    }
-    .big4 {
-        width: 400px;
         height: auto;
     }
     .big4 img {
@@ -111,5 +134,13 @@ body {
     }
     .logo img {
         width: 100%;
+    }
+    .win,
+    .loss,
+    .guess_at,
+    .guesses,
+    #attempts,
+    .alpha {
+        font-size: 30px;
     }
 }
