@@ -39,7 +39,7 @@ body {
     position: absolute;
     color: white;
     font-size: 30px;
-    bottom: 7%;
+    bottom: 8%;
     text-shadow: 0 0 5px red, 0 0 7px orange;
 }
 
@@ -55,7 +55,7 @@ body {
     position: absolute;
     color: white;
     font-size: 30px;
-    bottom: 7%;
+    bottom: 8%;
     right: 10%;
     text-shadow: 0 0 5px red, 0 0 7px orange;
 }
@@ -73,7 +73,7 @@ body {
     position: absolute;
     color: white;
     font-size: 30px;
-    bottom: 7%;
+    bottom: 8%;
     right: 5%;
     text-shadow: 0 0 5px red, 0 0 7px orange;
 }
